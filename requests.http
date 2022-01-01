@@ -1,0 +1,16 @@
+### 
+POST http://localhost:3001/weather
+Content-Type: application/json
+
+{
+    "city":"Colombo"
+}
+
+
+### 
+POST http://localhost:3001/pawned
+Content-Type: application/json
+
+{
+    "emails":["test@gmail.com"]
+}
