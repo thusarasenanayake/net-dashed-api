@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const morgan = require('morgan');
+// const morgan = require('morgan');
 const localNewsRoutes = require('./routes/localNewsRoutes');
 const foreignNewsRoutes = require('./routes/foreignNewsRoutes');
 const weatherRoutes = require('./routes/weatherRoutes');
@@ -29,7 +29,7 @@ app.listen(port, () => {
 
 app.use(express.json());
 app.use(cors(corsOptions));
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 
 // ------ routes ------
 
